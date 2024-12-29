@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ahaya_app_brazil_sc_ahaya_app_brazil_scTests : NSObject
+@end
+@implementation PodsDummy_Pods_ahaya_app_brazil_sc_ahaya_app_brazil_scTests
+@end

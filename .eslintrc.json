@@ -1,0 +1,70 @@
+{
+  "env": {
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "globals": {
+    "__DEV__": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-one-expression-per-line": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-duplicates": "off",
+    "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-param-reassign": 0,
+    "arrow-parens": "off",
+    "no-return-assign": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "no-plusplus": "off",
+    "react/jsx-curly-newline": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "no-unused-expressions": "off",
+    "no-restricted-modules": ["error", "*.png", "*.jpg"],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "camelcase": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "ignorePatterns": ["*.js", "**/vendor/*.js"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "configurations": {
+    "android.emu.debug": {
+      "type": "android.emulator",
+      "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+      "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+      "device": {
+        "avdName": "Pixel_5_API_32"
+      }
+    },
+    "ios.emu.release": {
+      "type": "ios.simulator",
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/ahaya_app_brazil_sc.app",
+      "build": "xcodebuild -workspace ios/ahaya_app_brazil_sc.xcworkspace -scheme ahaya_app_brazil_sc -sdk iphonesimulator -derivedDataPath ios/build",
+      "device": {
+        "name": "iPhone 13"
+      }
+    }
+  }
+}
